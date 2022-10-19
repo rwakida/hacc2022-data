@@ -1,0 +1,24 @@
+1. Download PHP Zip File Thread Safe
+https://windows.php.net/download#php-8.1
+
+2. Extract Zip file and extract to C Drive
+Rename Folder to php
+
+3. Setup php configuration
+Enter php folder and edit php.ini-production
+copy all text
+Create new file php.ini
+paste all text
+delete the ; on line 940 and 918 for pdo_sqlite and curl
+save the file
+4. Create Local DB
+open command prompt
+go to Legtrack Folder
+run commands as such
+C:\php\php.exe -f create-local-db.php
+Optional path variable tutorial
+https://www.php.net/manual/en/install.windows.commandline.php
+
+5. Run Scraper
+C:\Legtrack>C:\php\php.exe -f scrape-measures.php
+

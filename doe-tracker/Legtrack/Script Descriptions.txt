@@ -1,0 +1,35 @@
+Create Local DB
+Create SQLite Database with the tables and columns
+
+Scrape Measures 
+Parses capital.hawaii.gov site and saves measure types as seprate html files
+Compares the html files with the local files and save differences to local database
+
+drop-local-db
+Deletes the SQLite Database
+
+Base_Parser
+basic parser functions used in other libary functions
+
+curl
+Curl commands to download html files
+Second most important file to edit
+
+db_base
+Basic Database functions
+
+enum
+Contains the array for the measure types and job status
+
+functions
+File Functions for reading and writing
+
+local_sqlite
+Functions for the sqlite local database
+
+logger
+Logging Functions to log actions and jobs for the local database
+
+measure_parser
+This contains the html structure of the raw html file format for parsing.
+Edit this when the capital.gov site updates the measure page
