@@ -69,7 +69,7 @@ class Curl {
   private function download($url) {
     try {
       $this->setDefaultOptions();
-      if ($this->debug) setDebugOptions();
+      if ($this->debug) $this->setDebugOptions();
       $this->setopt(CURLOPT_URL, $url);
       $this->result = curl_exec($this->ch);
       $this->saveCurlStatus();
